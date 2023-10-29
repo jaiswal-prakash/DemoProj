@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HomePage</title>
+</head>
+<body>
+    <div>
+        <!--
+        <h1>Hello @ViewData["name"]!</h1>
+        <h2>Welcome to Asp .net World</h2>
+        <h2>Today: @ViewData["today"]</h2>
+    -->
+
+        <h1>Hello @ViewBag.name!</h1>
+        <h2>Welcome to Asp .net World</h2>
+        <h2>Today: @ViewBag.today</h2>
+
+    <!--
+        <h1>My name is @TempData["name"]!</h1>
+        <h2>Welcome to Asp .net World</h2>
+        <h2>Today is @TempData["today"]</h2>
+    -->
+        <h1>My name is @Session["name"]!</h1>
+        <h2>Welcome to Asp .net World</h2>
+        <h2>Today is @Session["today"]</h2>
+    </div>
+</body>
+</html>

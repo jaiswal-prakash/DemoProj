@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>About</title>
+</head>
+<body>
+    <div> 
+        <h1>About US</h1>
+        <ol>
+            <li>@ViewData["Name"]</li>
+            <li>@ViewBag.Surname</li>
+            <li>@TempData["Address"]</li>
+            <li>@Session["Mobile"]</li>
+        </ol>
+    </div>
+</body>
+</html>
